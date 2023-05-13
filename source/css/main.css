@@ -1,0 +1,24 @@
+@import url('reset.css');
+@import url('fonts.css');
+@import url('blocks/wrapper.css');
+@import url('blocks/header.css');
+@import url('blocks/main.css');
+@import url('blocks/nav-menu.css');
+@import url('blocks/user-menu.css');
+@import url('blocks/promo.css');
+@import url('blocks/catalog.css');
+@import url('blocks/new-products.css');
+@import url('blocks/product.css');
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }

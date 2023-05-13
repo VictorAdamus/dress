@@ -1,0 +1,146 @@
+.new-products {
+    padding-bottom: 150px;
+}
+
+.new-products__wrapper {
+    width: 100%;
+    max-width: 1920px;
+    padding-left: 210px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.new-products__list {
+    gap: 16px;
+}
+
+.new-products__wrapper .swiper {
+    max-width: 100%;
+    margin: 0 0 0 auto;
+    padding-top: 70px;
+}
+
+.new-products__title {
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.new-products__link {
+    text-transform: uppercase;
+    position: absolute;
+    display: block;
+    padding: 5px 20px;
+    left: 0;
+    top: 50%;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    z-index: 2;
+}
+
+.new-products__link:hover {
+    transform: rotate(-90deg) scale(1.1);
+    color: #0077d4;
+}
+
+.new-products svg {
+    transition: all .5s;
+}
+
+.new-products__link:hover svg {
+    transform: translateX(5px);
+}
+
+.new-products svg path {
+    transition: all .5s;
+}
+
+.new-products__link:hover svg path {
+    fill: #0077d4;
+}
+
+.new-products__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85px;
+}
+
+.new-products__btn {
+    width: 16px;
+    height: 15px;
+    padding: 5px 10px;
+    box-sizing: content-box;
+    background-image: url('../../img/icons/swiper-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 12px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.new-products__btn--next {
+    transform: rotate(180deg);
+}
+
+.new-products__btn:hover {
+    transform: scale(1.2);
+}
+
+.new-products__btn--next:hover {
+    transform: rotate(180deg) scale(1.2);
+}
+
+
+@media (max-width: 1200px) {
+
+    .new-products__wrapper {
+        padding: 0 100px;
+    }
+
+    .new-products__navigation {
+        right: 20px;
+        top: 20px;
+    }
+
+    .new-products__link {
+        transform: rotate(0);
+        top: 70px;
+        left: 50px;
+    }
+
+    .new-products__link:hover {
+        transform: rotate(0);
+    }
+}
+
+@media(max-width: 768px) {
+
+    .new-products__wrapper {
+        padding: 0 20px;
+    }
+
+    .new-products__list {
+        gap: 16px;
+    }
+
+    .new-products__title {
+        font-size: 16px;
+    }
+
+    .new-products__link {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .new-products__wrapper {
+        padding: 0 5px;
+    }
+}

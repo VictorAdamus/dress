@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress</title>
+    <link rel="preload" href="fonts/montserrat.woff2" as="fonts" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__wrapper">
+                <div class="header__container">
+                    <nav class="header__nav-menu nav-menu">
+                        <ul class="nav-menu__list">
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">женщинам</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">мужчинам</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">аксессуары</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">новинки</a>
+                            </li>
+                            <li class="nav-menu__item">
+                                <a class="nav-menu__link" href="#">коллекции</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul class="header__user-menu user-menu">
+                        <li class="user-menu__item">
+                            <a class="user-menu__link" href="#">
+                                <span class="visually-hidden">Поиск.</span>
+                                <svg class="user-menu__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                    fill="none">
+                                    <path fill="#000"
+                                        d="m20.7 19.5-3.3-3.3c1.4-1.7 2.1-3.9 2.1-6.1 0-5.4-4.4-9.8-9.8-9.8C4.4.3 0 4.7 0 10.1s4.4 9.8 9.8 9.8c2.6 0 5.1-1 6.9-2.9l3.2 3.2c.1.1.2.2.4.2s.3-.1.4-.2c.1-.1.2-.2.2-.4 0-.1-.1-.2-.2-.3Zm-2.2-9.4c0 4.8-3.9 8.7-8.7 8.7-4.8 0-8.7-3.9-8.7-8.7 0-4.8 3.9-8.7 8.7-8.7 4.8 0 8.7 3.9 8.7 8.7Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="user-menu__item">
+                            <a class="user-menu__link" href="#">
+                                <span class="visually-hidden">Профиль.</span>
+                                <svg class="user-menu__icon" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                                    fill="none">
+                                    <path fill="#000"
+                                        d="M11.51 14.296c3.8 0 7-3.1 7-7s-3.1-7-7-7-7 3.1-7 7 3.1 7 7 7Zm-5.9-6.9c0-3.2 2.6-5.9 5.9-5.9 3.3 0 5.9 2.6 5.9 5.9 0 3.3-2.6 5.9-5.9 5.9-3.3 0-5.9-2.7-5.9-5.9ZM21.81 19.396c-3-2.4-6.6-3.6-10.4-3.6-3.8 0-7.3 1.3-10.3 3.6-.2.2-.3.5-.1.8.2.2.5.3.8.1 2.8-2.2 6.1-3.4 9.7-3.4 3.6 0 6.9 1.2 9.7 3.4.1.1.2.1.3.1.2 0 .3-.1.4-.2.2-.3.2-.6-.1-.8Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="user-menu__item">
+                            <a class="user-menu__link user-menu__link--details">
+                                <span class="visually-hidden">Избранное.</span>
+                                <svg class="user-menu__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="19"
+                                    fill="none">
+                                    <path fill="#000"
+                                        d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Zm-.5 1c2.1.8 3.9 3.3 3.1 6.7-1.3 5.8-8.6 9.2-9.6 9.7-1.2-.5-8.3-3.9-9.6-9.7-.7-3.4 1.1-5.8 3.2-6.7.6-.2 1.1-.3 1.7-.3 2 0 3.5 1.4 4.3 2.7.1.1.3.2.4.2.2 0 .3-.1.4-.2 1.2-1.8 3.4-3.5 6.1-2.4Z" />
+                                </svg>
+                                <div class="user-menu__count-wrapper">
+                                    <span class="user-menu__count">6</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="user-menu__item">
+                            <a class="user-menu__link  user-menu__link--details">
+                                <span class="visually-hidden">Корзина.</span>
+                                <svg class="user-menu__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="23"
+                                    fill="none">
+                                    <path fill="#000"
+                                        d="m21.587 15.3 1.5-10.5c0-.1 0-.3-.1-.4-.1-.1-.2-.1-.4-.1h-17.7l-.7-3.9c0-.2-.2-.4-.5-.4h-2.4c-.3 0-.5.2-.5.5s.3.5.5.5h2l2.5 16.9c0 .2.2.4.5.4h14.7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-14.3l-.3-1.6h14.6c.3 0 .5-.1.6-.4Zm.4-10-1.3 9.5h-14.3l-1.4-9.5h17ZM8.588 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm.9 1.9c0 .5-.4 1-1 1-.5 0-1-.4-1-1s.4-1 1-1 1 .5 1 1ZM18.386 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm0 2.9c-.5 0-1-.4-1-1 0-.5.4-1 1-1 .5 0 1 .4 1 1s-.5 1-1 1Z" />
+                                </svg>
+                                <div class="user-menu__count-wrapper">
+                                    <span class="user-menu__count">8</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="swiper swiper__promo">
+                <div class="swiper-wrapper">
+                    <section class="promo swiper-slide">
+                        <div class="promo__wrapper">
+                            <p class="promo__description">Новая коллекция 2022</p>
+                            <h1 class="promo__title">платья с принтами</h1>
+                            <a class="promo__link" href="#">смотреть
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="7" fill="none">
+                                    <path fill="#fff"
+                                        d="m8.618 3.531-3.192-3-.744.7 1.808 1.8H0v1h6.49l-1.808 1.8.744.7 3.192-3Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="promo promo--second swiper-slide">
+                        <div class="promo__wrapper">
+                            <p class="promo__description">Новая коллекция 2022</p>
+                            <h1 class="promo__title">платья с принтами</h1>
+                            <a class="promo__link" href="#">смотреть
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="7" fill="none">
+                                    <path fill="#fff"
+                                        d="m8.618 3.531-3.192-3-.744.7 1.808 1.8H0v1h6.49l-1.808 1.8.744.7 3.192-3Z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="promo__btn-container">
+                    <div class="promo__btn promo__btn--prev">предыдущий</div>
+                    <div class="promo__btn promo__btn--next">следующий</div>
+                </div>
+                <div class="swiper-scrollbar promo__swiper-scrollbar"></div>
+            </div>
+            <section class="catalog">
+                <div class="catalog__wrapper">
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">
+                                <h2 class="catalog__title">лето</h2>
+                                <div class="catalog__img-wrapper">
+                                    <div class="catalog__img catalog__img--summer"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">
+                                <h2 class="catalog__title">путешествие</h2>
+                                <div class="catalog__img-wrapper">
+                                    <div class="catalog__img catalog__img--travel"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">
+                                <h2 class="catalog__title">коллекции</h2>
+                                <div class="catalog__img-wrapper">
+                                    <div class="catalog__img catalog__img--collection"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">
+                                <h2 class="catalog__title">новинки</h2>
+                                <div class="catalog__img-wrapper">
+                                    <div class="catalog__img catalog__img--new"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">
+                                <h2 class="catalog__title">скидки</h2>
+                                <div class="catalog__img-wrapper">
+                                    <div class="catalog__img catalog__img--discount"></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#">
+                                <h2 class="catalog__title">лукбук</h2>
+                                <div class="catalog__img-wrapper">
+                                    <div class="catalog__img catalog__img--lookbook"></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="catalog__footer"></div>
+                </div>
+            </section>
+            <section class="new-products">
+                <div class="new-products__wrapper">
+                    <h3 class="new-products__title">откройте для себя <br>новинки сезона</h3>
+                    <div class="new-products__swiper swiper">
+                        <ul class="new-products__list swiper-wrapper">
+                            <li class="new-products__item product swiper-slide">
+                                <span class="product__favorite product__favorite--active">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                        <path class="product__icon-path" fill="transparent"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Z" />
+                                        <path fill="#000"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Zm-.5 1c2.1.8 3.9 3.3 3.1 6.7-1.3 5.8-8.6 9.2-9.6 9.7-1.2-.5-8.3-3.9-9.6-9.7-.7-3.4 1.1-5.8 3.2-6.7.6-.2 1.1-.3 1.7-.3 2 0 3.5 1.4 4.3 2.7.1.1.3.2.4.2.2 0 .3-.1.4-.2 1.2-1.8 3.4-3.5 6.1-2.4Z" />
+                                    </svg>
+                                </span>
+                                <img class="product__img" src="img/dress-1.png" width="auto" height="585" alt="dress-1">
+                                <div class="product__option">
+                                    <ul class="product__size-list">
+                                        <li class="product__size-item">xxs</li>
+                                        <li class="product__size-item">xs</li>
+                                        <li class="product__size-item">s</li>
+                                        <li class="product__size-item">m</li>
+                                        <li class="product__size-item">l</li>
+                                        <li class="product__size-item">xl</li>
+                                        <li class="product__size-item">xxl</li>
+                                    </ul>
+                                    <button class="product__btn">в корзину
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" fill="none">
+                                            <path fill="#000"
+                                                d="m21.587 15.3 1.5-10.5c0-.1 0-.3-.1-.4-.1-.1-.2-.1-.4-.1h-17.7l-.7-3.9c0-.2-.2-.4-.5-.4h-2.4c-.3 0-.5.2-.5.5s.3.5.5.5h2l2.5 16.9c0 .2.2.4.5.4h14.7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-14.3l-.3-1.6h14.6c.3 0 .5-.1.6-.4Zm.4-10-1.3 9.5h-14.3l-1.4-9.5h17ZM8.588 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm.9 1.9c0 .5-.4 1-1 1-.5 0-1-.4-1-1s.4-1 1-1 1 .5 1 1ZM18.386 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm0 2.9c-.5 0-1-.4-1-1 0-.5.4-1 1-1 .5 0 1 .4 1 1s-.5 1-1 1Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product__description">
+                                    <div class="product__text">
+                                        <p class="product__title">Платье-рубашка виск атлас</p>
+                                        <p class="product__price">12 700р.</p>
+                                    </div>
+                                    <span class="product__label">новинка</span>
+                                </div>
+                            </li>
+                            <li class="new-products__item product swiper-slide">
+                                <span class="product__favorite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                        <path class="product__icon-path" fill="transparent"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Z" />
+                                        <path fill="#000"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Zm-.5 1c2.1.8 3.9 3.3 3.1 6.7-1.3 5.8-8.6 9.2-9.6 9.7-1.2-.5-8.3-3.9-9.6-9.7-.7-3.4 1.1-5.8 3.2-6.7.6-.2 1.1-.3 1.7-.3 2 0 3.5 1.4 4.3 2.7.1.1.3.2.4.2.2 0 .3-.1.4-.2 1.2-1.8 3.4-3.5 6.1-2.4Z" />
+                                    </svg>
+                                </span>
+                                <img class="product__img" src="img/dress-2.png" width="auto" height="585" alt="dress-2">
+                                <div class="product__option">
+                                    <ul class="product__size-list">
+                                        <li class="product__size-item">xxs</li>
+                                        <li class="product__size-item">xs</li>
+                                        <li class="product__size-item">s</li>
+                                        <li class="product__size-item">m</li>
+                                        <li class="product__size-item">l</li>
+                                        <li class="product__size-item">xl</li>
+                                        <li class="product__size-item">xxl</li>
+                                    </ul>
+                                    <button class="product__btn">в корзину
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" fill="none">
+                                            <path fill="#000"
+                                                d="m21.587 15.3 1.5-10.5c0-.1 0-.3-.1-.4-.1-.1-.2-.1-.4-.1h-17.7l-.7-3.9c0-.2-.2-.4-.5-.4h-2.4c-.3 0-.5.2-.5.5s.3.5.5.5h2l2.5 16.9c0 .2.2.4.5.4h14.7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-14.3l-.3-1.6h14.6c.3 0 .5-.1.6-.4Zm.4-10-1.3 9.5h-14.3l-1.4-9.5h17ZM8.588 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm.9 1.9c0 .5-.4 1-1 1-.5 0-1-.4-1-1s.4-1 1-1 1 .5 1 1ZM18.386 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm0 2.9c-.5 0-1-.4-1-1 0-.5.4-1 1-1 .5 0 1 .4 1 1s-.5 1-1 1Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product__description">
+                                    <div class="product__text">
+                                        <p class="product__title">Юбка миди 2 полоска</p>
+                                        <p class="product__price">4 400р.</p>
+                                    </div>
+                                    <div class="product__details">
+                                        <span class="product__label">новинка</span>
+                                        <ul class="product__color-list">
+                                            <li class="product__color-item product__color-item--grey"></li>
+                                            <li class="product__color-item product__color-item--beige"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="new-products__item product swiper-slide">
+                                <span class="product__favorite product__favorite--active">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                        <path class="product__icon-path" fill="transparent"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Z" />
+                                        <path fill="#000"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Zm-.5 1c2.1.8 3.9 3.3 3.1 6.7-1.3 5.8-8.6 9.2-9.6 9.7-1.2-.5-8.3-3.9-9.6-9.7-.7-3.4 1.1-5.8 3.2-6.7.6-.2 1.1-.3 1.7-.3 2 0 3.5 1.4 4.3 2.7.1.1.3.2.4.2.2 0 .3-.1.4-.2 1.2-1.8 3.4-3.5 6.1-2.4Z" />
+                                    </svg>
+                                </span>
+                                <img class="product__img" src="img/dress-1.png" width="auto" height="585" alt="dress-1">
+                                <div class="product__option">
+                                    <ul class="product__size-list">
+                                        <li class="product__size-item">xxs</li>
+                                        <li class="product__size-item">xs</li>
+                                        <li class="product__size-item">s</li>
+                                        <li class="product__size-item">m</li>
+                                        <li class="product__size-item">l</li>
+                                        <li class="product__size-item">xl</li>
+                                        <li class="product__size-item">xxl</li>
+                                    </ul>
+                                    <button class="product__btn">в корзину
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" fill="none">
+                                            <path fill="#000"
+                                                d="m21.587 15.3 1.5-10.5c0-.1 0-.3-.1-.4-.1-.1-.2-.1-.4-.1h-17.7l-.7-3.9c0-.2-.2-.4-.5-.4h-2.4c-.3 0-.5.2-.5.5s.3.5.5.5h2l2.5 16.9c0 .2.2.4.5.4h14.7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-14.3l-.3-1.6h14.6c.3 0 .5-.1.6-.4Zm.4-10-1.3 9.5h-14.3l-1.4-9.5h17ZM8.588 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm.9 1.9c0 .5-.4 1-1 1-.5 0-1-.4-1-1s.4-1 1-1 1 .5 1 1ZM18.386 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm0 2.9c-.5 0-1-.4-1-1 0-.5.4-1 1-1 .5 0 1 .4 1 1s-.5 1-1 1Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product__description">
+                                    <div class="product__text">
+                                        <p class="product__title">Платье-рубашка виск атлас</p>
+                                        <p class="product__price">12 700р.</p>
+                                    </div>
+                                    <span class="product__label">новинка</span>
+                                </div>
+                            </li>
+                            <li class="new-products__item product swiper-slide">
+                                <span class="product__favorite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                        <path class="product__icon-path" fill="transparent"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Z" />
+                                        <path fill="#000"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Zm-.5 1c2.1.8 3.9 3.3 3.1 6.7-1.3 5.8-8.6 9.2-9.6 9.7-1.2-.5-8.3-3.9-9.6-9.7-.7-3.4 1.1-5.8 3.2-6.7.6-.2 1.1-.3 1.7-.3 2 0 3.5 1.4 4.3 2.7.1.1.3.2.4.2.2 0 .3-.1.4-.2 1.2-1.8 3.4-3.5 6.1-2.4Z" />
+                                    </svg>
+                                </span>
+                                <img class="product__img" src="img/dress-3.png" width="auto" height="585" alt="dress-3">
+                                <div class="product__option">
+                                    <ul class="product__size-list">
+                                        <li class="product__size-item product__size-item--none">xxs</li>
+                                        <li class="product__size-item">xs</li>
+                                        <li class="product__size-item">s</li>
+                                        <li class="product__size-item">m</li>
+                                        <li class="product__size-item">l</li>
+                                        <li class="product__size-item product__size-item--none">xl</li>
+                                        <li class="product__size-item">xxl</li>
+                                    </ul>
+                                    <button class="product__btn">в корзину
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" fill="none">
+                                            <path fill="#000"
+                                                d="m21.587 15.3 1.5-10.5c0-.1 0-.3-.1-.4-.1-.1-.2-.1-.4-.1h-17.7l-.7-3.9c0-.2-.2-.4-.5-.4h-2.4c-.3 0-.5.2-.5.5s.3.5.5.5h2l2.5 16.9c0 .2.2.4.5.4h14.7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-14.3l-.3-1.6h14.6c.3 0 .5-.1.6-.4Zm.4-10-1.3 9.5h-14.3l-1.4-9.5h17ZM8.588 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm.9 1.9c0 .5-.4 1-1 1-.5 0-1-.4-1-1s.4-1 1-1 1 .5 1 1ZM18.386 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm0 2.9c-.5 0-1-.4-1-1 0-.5.4-1 1-1 .5 0 1 .4 1 1s-.5 1-1 1Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product__description">
+                                    <div class="product__text">
+                                        <p class="product__title">Платье-рубашка виск атлас</p>
+                                        <p class="product__price">12 700р.</p>
+                                    </div>
+                                    <span class="product__label">новинка</span>
+                                </div>
+                            </li>
+                            <li class="new-products__item product swiper-slide">
+                                <span class="product__favorite product__favorite--active">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                        <path class="product__icon-path" fill="transparent"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Z" />
+                                        <path fill="#000"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Zm-.5 1c2.1.8 3.9 3.3 3.1 6.7-1.3 5.8-8.6 9.2-9.6 9.7-1.2-.5-8.3-3.9-9.6-9.7-.7-3.4 1.1-5.8 3.2-6.7.6-.2 1.1-.3 1.7-.3 2 0 3.5 1.4 4.3 2.7.1.1.3.2.4.2.2 0 .3-.1.4-.2 1.2-1.8 3.4-3.5 6.1-2.4Z" />
+                                    </svg>
+                                </span>
+                                <img class="product__img" src="img/dress-1.png" width="auto" height="585" alt="dress-1">
+                                <div class="product__option">
+                                    <ul class="product__size-list">
+                                        <li class="product__size-item">xxs</li>
+                                        <li class="product__size-item">xs</li>
+                                        <li class="product__size-item">s</li>
+                                        <li class="product__size-item">m</li>
+                                        <li class="product__size-item">l</li>
+                                        <li class="product__size-item">xl</li>
+                                        <li class="product__size-item">xxl</li>
+                                    </ul>
+                                    <button class="product__btn">в корзину
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" fill="none">
+                                            <path fill="#000"
+                                                d="m21.587 15.3 1.5-10.5c0-.1 0-.3-.1-.4-.1-.1-.2-.1-.4-.1h-17.7l-.7-3.9c0-.2-.2-.4-.5-.4h-2.4c-.3 0-.5.2-.5.5s.3.5.5.5h2l2.5 16.9c0 .2.2.4.5.4h14.7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-14.3l-.3-1.6h14.6c.3 0 .5-.1.6-.4Zm.4-10-1.3 9.5h-14.3l-1.4-9.5h17ZM8.588 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm.9 1.9c0 .5-.4 1-1 1-.5 0-1-.4-1-1s.4-1 1-1 1 .5 1 1ZM18.386 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm0 2.9c-.5 0-1-.4-1-1 0-.5.4-1 1-1 .5 0 1 .4 1 1s-.5 1-1 1Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product__description">
+                                    <div class="product__text">
+                                        <p class="product__title">Платье-рубашка виск атлас</p>
+                                        <p class="product__price">12 700р.</p>
+                                    </div>
+                                    <span class="product__label">новинка</span>
+                                </div>
+                            </li>
+                            <li class="new-products__item product swiper-slide">
+                                <span class="product__favorite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                        <path class="product__icon-path" fill="transparent"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Z" />
+                                        <path fill="#000"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Zm-.5 1c2.1.8 3.9 3.3 3.1 6.7-1.3 5.8-8.6 9.2-9.6 9.7-1.2-.5-8.3-3.9-9.6-9.7-.7-3.4 1.1-5.8 3.2-6.7.6-.2 1.1-.3 1.7-.3 2 0 3.5 1.4 4.3 2.7.1.1.3.2.4.2.2 0 .3-.1.4-.2 1.2-1.8 3.4-3.5 6.1-2.4Z" />
+                                    </svg>
+                                </span>
+                                <img class="product__img" src="img/dress-4.png" width="auto" height="585" alt="dress-4">
+                                <div class="product__option">
+                                    <ul class="product__size-list">
+                                        <li class="product__size-item">xxs</li>
+                                        <li class="product__size-item">xs</li>
+                                        <li class="product__size-item">s</li>
+                                        <li class="product__size-item">m</li>
+                                        <li class="product__size-item">l</li>
+                                        <li class="product__size-item">xl</li>
+                                        <li class="product__size-item">xxl</li>
+                                    </ul>
+                                    <button class="product__btn">в корзину
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" fill="none">
+                                            <path fill="#000"
+                                                d="m21.587 15.3 1.5-10.5c0-.1 0-.3-.1-.4-.1-.1-.2-.1-.4-.1h-17.7l-.7-3.9c0-.2-.2-.4-.5-.4h-2.4c-.3 0-.5.2-.5.5s.3.5.5.5h2l2.5 16.9c0 .2.2.4.5.4h14.7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-14.3l-.3-1.6h14.6c.3 0 .5-.1.6-.4Zm.4-10-1.3 9.5h-14.3l-1.4-9.5h17ZM8.588 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm.9 1.9c0 .5-.4 1-1 1-.5 0-1-.4-1-1s.4-1 1-1 1 .5 1 1ZM18.386 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm0 2.9c-.5 0-1-.4-1-1 0-.5.4-1 1-1 .5 0 1 .4 1 1s-.5 1-1 1Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product__description">
+                                    <div class="product__text">
+                                        <p class="product__title">Платье-рубашка с карманами миди</p>
+                                        <div class="product__price-wrapper">
+                                            <p class="product__price product__price--old">12 900р.</p>
+                                            <p class="product__price">8 900р.</p>
+                                        </div>
+                                    </div>
+                                    <span class="product__label">новинка</span>
+                                </div>
+                            </li>
+                            <li class="new-products__item product swiper-slide">
+                                <span class="product__favorite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                        <path class="product__icon-path" fill="transparent"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Z" />
+                                        <path fill="#000"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Zm-.5 1c2.1.8 3.9 3.3 3.1 6.7-1.3 5.8-8.6 9.2-9.6 9.7-1.2-.5-8.3-3.9-9.6-9.7-.7-3.4 1.1-5.8 3.2-6.7.6-.2 1.1-.3 1.7-.3 2 0 3.5 1.4 4.3 2.7.1.1.3.2.4.2.2 0 .3-.1.4-.2 1.2-1.8 3.4-3.5 6.1-2.4Z" />
+                                    </svg>
+                                </span>
+                                <img class="product__img" src="img/dress-4.png" width="auto" height="585" alt="dress-4">
+                                <div class="product__option">
+                                    <ul class="product__size-list">
+                                        <li class="product__size-item">xxs</li>
+                                        <li class="product__size-item">xs</li>
+                                        <li class="product__size-item">s</li>
+                                        <li class="product__size-item">m</li>
+                                        <li class="product__size-item">l</li>
+                                        <li class="product__size-item">xl</li>
+                                        <li class="product__size-item">xxl</li>
+                                    </ul>
+                                    <button class="product__btn">в корзину
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" fill="none">
+                                            <path fill="#000"
+                                                d="m21.587 15.3 1.5-10.5c0-.1 0-.3-.1-.4-.1-.1-.2-.1-.4-.1h-17.7l-.7-3.9c0-.2-.2-.4-.5-.4h-2.4c-.3 0-.5.2-.5.5s.3.5.5.5h2l2.5 16.9c0 .2.2.4.5.4h14.7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-14.3l-.3-1.6h14.6c.3 0 .5-.1.6-.4Zm.4-10-1.3 9.5h-14.3l-1.4-9.5h17ZM8.588 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm.9 1.9c0 .5-.4 1-1 1-.5 0-1-.4-1-1s.4-1 1-1 1 .5 1 1ZM18.386 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm0 2.9c-.5 0-1-.4-1-1 0-.5.4-1 1-1 .5 0 1 .4 1 1s-.5 1-1 1Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product__description">
+                                    <div class="product__text">
+                                        <p class="product__title">Платье-рубашка с карманами миди</p>
+                                        <div class="product__price-wrapper">
+                                            <p class="product__price product__price--old">12 900р.</p>
+                                            <p class="product__price">8 900р.</p>
+                                        </div>
+                                    </div>
+                                    <span class="product__label">новинка</span>
+                                </div>
+                            </li>
+                            <li class="new-products__item product swiper-slide">
+                                <span class="product__favorite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none">
+                                        <path class="product__icon-path" fill="transparent"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Z" />
+                                        <path fill="#000"
+                                            d="M17.74.423c-2.5-1-5.2-.2-6.9 2.1-1.8-2.3-4.4-3.1-6.9-2-2.4 1-4.7 3.9-3.7 7.9.7 3.6 3.5 6.2 5.8 7.8 2.4 1.7 4.5 2.6 4.7 2.6h.2c.1 0 .2 0 .2-.1.3-.1 2.3-1 4.6-2.6 2.2-1.6 5-4.2 5.8-7.9.9-3.9-1.4-6.8-3.8-7.8Zm-.5 1c2.1.8 3.9 3.3 3.1 6.7-1.3 5.8-8.6 9.2-9.6 9.7-1.2-.5-8.3-3.9-9.6-9.7-.7-3.4 1.1-5.8 3.2-6.7.6-.2 1.1-.3 1.7-.3 2 0 3.5 1.4 4.3 2.7.1.1.3.2.4.2.2 0 .3-.1.4-.2 1.2-1.8 3.4-3.5 6.1-2.4Z" />
+                                    </svg>
+                                </span>
+                                <img class="product__img" src="img/dress-4.png" width="auto" height="585" alt="dress-4">
+                                <div class="product__option">
+                                    <ul class="product__size-list">
+                                        <li class="product__size-item">xxs</li>
+                                        <li class="product__size-item">xs</li>
+                                        <li class="product__size-item">s</li>
+                                        <li class="product__size-item">m</li>
+                                        <li class="product__size-item">l</li>
+                                        <li class="product__size-item">xl</li>
+                                        <li class="product__size-item">xxl</li>
+                                    </ul>
+                                    <button class="product__btn">в корзину
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23" fill="none">
+                                            <path fill="#000"
+                                                d="m21.587 15.3 1.5-10.5c0-.1 0-.3-.1-.4-.1-.1-.2-.1-.4-.1h-17.7l-.7-3.9c0-.2-.2-.4-.5-.4h-2.4c-.3 0-.5.2-.5.5s.3.5.5.5h2l2.5 16.9c0 .2.2.4.5.4h14.7c.3 0 .5-.2.5-.5s-.2-.5-.5-.5h-14.3l-.3-1.6h14.6c.3 0 .5-.1.6-.4Zm.4-10-1.3 9.5h-14.3l-1.4-9.5h17ZM8.588 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1.1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm.9 1.9c0 .5-.4 1-1 1-.5 0-1-.4-1-1s.4-1 1-1 1 .5 1 1ZM18.386 18.8c-1.1 0-1.9.9-1.9 1.9 0 1.1.9 2 1.9 2 1 0 1.9-.9 1.9-1.9 0-1.1-.9-2-1.9-2Zm0 2.9c-.5 0-1-.4-1-1 0-.5.4-1 1-1 .5 0 1 .4 1 1s-.5 1-1 1Z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="product__description">
+                                    <div class="product__text">
+                                        <p class="product__title">Платье-рубашка с карманами миди</p>
+                                        <div class="product__price-wrapper">
+                                            <p class="product__price product__price--old">12 900р.</p>
+                                            <p class="product__price">8 900р.</p>
+                                        </div>
+                                    </div>
+                                    <span class="product__label">новинка</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="new-products__navigation">
+                            <div class="new-products__btn new-products__btn--prev"></div>
+                            <div class="new-products__btn new-products__btn--next"></div>
+                        </div>
+                    </div>
+                    <a class="new-products__link" href="#">Перейти в каталог
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none">
+                            <path fill="#000"
+                                d="m8.618 3.531-3.192-3-.744.7 1.808 1.8H0v1h6.49l-1.808 1.8.744.7 3.192-3Z" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
