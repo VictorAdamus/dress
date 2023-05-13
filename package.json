@@ -4,6 +4,7 @@
   "type": "module",
   "description": "Dress width prints",
   "main": "index.js",
+  "homepage": "https://VictorAdamus.github.io/dress",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
